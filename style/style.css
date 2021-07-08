@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #64a5b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculadora{
+    height: 85vh;
+    width: 30%;
+    background: #4c4b4b;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/*//////////////////////////////////*/
+/*DISPLAY DIGITAL*/
+/*//////////////////////////////////*/
+.ContieneDisplay{
+    height: 14vh;
+    width: 80%;
+    background: #d4e4b1;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+}.ContieneDisplay p{
+    width: 100%;
+    height: 100%;
+    background: #d4e4b1;
+    font-family: DigitalST24;
+    font-size: 10vh;
+    text-align:right;
+}
+/*//////////////////////////////////*/
+/*BOTONES C Y CE*/
+/*//////////////////////////////////*/
+.BotonCentral{
+    height: 5vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.BotonSuperior{
+    width: 20%;
+    height: 100%;
+    background: #ea5c62;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 4vh;    
+}.BotonSuperior:active{
+    border: 1px solid #e67c7c;
+}
+/*//////////////////////////////////*/
+/*BOTONES DE LOS NUMEROS Y SIMBOLOS*/
+/*//////////////////////////////////*/
+.ContieneBotones{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Botones{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between; 
+}
+.Numeros{
+    text-align: center;
+    width: 20%;
+    height: 11vh;
+    border: none;
+    background: #848484;
+    border-radius: 5px;
+    color: white;
+    font-size: 9vh;
+}.Numeros:active{
+    border: 1px solid #9faeb2;
+}
+/*//////////////////////////////////*/
+/*BOTONES DE SIMBOLOS*/
+/*//////////////////////////////////*/
+.Simbolo{
+    text-align: center;
+    width: 20%;
+    height: 11vh;
+    background: #4e9dc2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 9vh;
+}.Simbolo:active{
+    border: 1px solid #69bfe4;
+    transform: 10px;
+}
+.Igual{
+    width: 20%;
+    height: 11vh;
+    background: #ea5c62;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 9vh;    
+}.Igual:active{
+    border: 1px solid #e67c7c;
+}
+
+@font-face {
+    font-family: 'DigitalST24';
+    src: url('../fuente/Open24DisplaySt.ttf');
+}

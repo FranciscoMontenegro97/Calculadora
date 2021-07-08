@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/calculadora.png" type="image/png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form action="#" name="calculadora" id="calculadora">
+        <div class="ContieneDisplay">
+            <p id="Display">0</p>
+        </div>
+        <div class="BotonCentral">
+            <button class="BotonSuperior" value="Ret" onclick="retro()">RET</button>
+            <button class="BotonSuperior" value="CE" onclick="borradoParcial()">CE</button>
+            <button class="BotonSuperior" value="C" onclick="totalClear()">C</button>
+        </div>
+        <div class="ContieneBotones">
+            <div class="Botones">
+                <input type="button" id="Siete" value="7" class="Numeros" onclick="numero('7')">
+                <input type="button" id="Ocho" value="8"  class="Numeros" onclick="numero('8')">
+                <button type="button" id="Nueve" value="9"  class="Numeros" onclick="numero('9')">9</button>
+                <button type="button" id="Division" value="/"  class="Simbolo" onclick="operar('/')">/</button>
+            </div>
+            <div class="Botones">
+                <button type="button" id="Cuatro" value="4"  class="Numeros" onclick="numero('4')">4</button>
+                <button type="button" id="Cinco" value="5"  class="Numeros" onclick="numero('5')">5</button>
+                <button type="button" id="Seis" value="6"  class="Numeros" onclick="numero('6')">6</button>
+                <button type="button" id="Multiplicacion" value="*"  class="Simbolo" onclick="operar('*')">*</button>
+            </div>
+            <div class="Botones">
+                <button type="button" id="Uno" value="1" class="Numeros" onclick="numero('1')">1</button>
+                <button type="button" id="Dos" value="2" class="Numeros" onclick="numero('2')">2</button>
+                <button type="button" id="Tres" value="3" class="Numeros" onclick="numero('3')">3</button>
+                <button type="button" id="Menos" value="-" class="Simbolo" onclick="operar('-')">-</button>
+            </div>
+            <div class="Botones">
+                <button type="button" id="Cero" value="0"  class="Numeros" onclick="numero('0')">0</button>
+                <button type="button" id="Punto" value="."  class="Numeros" onclick="numero('.')">.</button>
+                <button type="button" id="NuevoIgual" value="="  class="Igual" onclick="igualar()">=</button>
+                <button type="button" id="Mas" value="+"  class="Simbolo" onclick="operar('+')">+</button>
+            </div>
+        </div>
+    </form>
+    <script src="js/calculos.js"></script>
+</body>
+</html>
